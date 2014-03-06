@@ -80,6 +80,13 @@ module.exports = function(grunt) {
                     spawn: false,
                     livereload: true
                 }
+            },
+            html: {
+                files: ['*.html'],
+                options: {
+                    spawn: false,
+                    livereload: true
+                }
             }
         }
     });

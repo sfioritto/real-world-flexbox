@@ -1,3 +1,60 @@
+
+/* Layout */
+body {
+    padding: 20px 0;
+}
+
+.outer {
+    max-width: 730px;
+    margin: 0 auto;
+}
+
 .jumbotron {
     text-align: center;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.plans {
+    display: flex;
+    
+    > div {
+        flex: 1 1 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .stretch {
+            flex: 1 0 auto;
+        }
+    }
+
+}
+
+.marketing {
+    margin-bottom: 6rem;
+}
+
+.well form .inputs{
+    display: flex;
+    
+    #email {
+        flex: 2 1 auto;
+    }
+    .btn {
+        flex: 0 1 auto;
+        margin-left: 1rem;
+    }
+}
+
+.footer {
+    border-top: 1px solid #eee;
+    padding-top: 2rem;
+    display: flex;
+    p {
+        flex: 1 0 auto;
+    }
+    a {
+        padding-left: 1rem;
+    }
 }

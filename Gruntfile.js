@@ -56,6 +56,15 @@ module.exports = function(grunt) {
         qunit: {
             files: ['test/**/*.html']
         },
+        autoprefixer: {
+            // prefix all files
+            multiple_files: {
+                expand: true,
+                flatten: true,
+                src: '*.css', 
+                dest: 'css/'
+            }
+        },
         sass: {
             dist: {
                 files: {
@@ -68,7 +77,14 @@ module.exports = function(grunt) {
                 files: ['*.scss'],
                 tasks: ['sass'],
                 options: {
-                    spawn: false,
+                    spawn: false
+                }
+            },
+            autoprefixer: {
+                files: ['*.css'],
+                tasks: ['autoprefixer'],
+                options: {
+                    spawn: false
                 }
             }
         }

@@ -16,15 +16,16 @@ body {
 
 .plans {
     display: flex;
+
     > div {
         width: 33%;
-        flex: 1;
+        flex: 1 1 0;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
 
         .stretch {
-            flex: 1;
+            flex: 1 0 auto;
         }
 
         a {
@@ -44,7 +45,7 @@ body {
     display: flex;
     
     #email {
-        flex: 9;
+        flex: 1 0 auto;
     }
     .btn {
         width: 25 * 10px;
@@ -60,7 +61,7 @@ body {
     padding-top: 2rem;
     display: flex;
     p {
-        flex: 1;
+        flex: 1 0 auto;
     }
     a {
         padding-left: 16px;

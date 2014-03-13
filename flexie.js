@@ -422,7 +422,9 @@ var Flexie = (function (win, doc) {
 					property = trim(prop.property);
 					value = trim(prop.value);
 
-					if (property) {
+                    // if you use the new syntax along with the old
+					if (property && property !== "flex") {
+
 						shortProp = property.replace("box-", EMPTY_STRING);
 						shortProp = property.replace("-webkit-box-", EMPTY_STRING);
 
@@ -571,7 +573,7 @@ var Flexie = (function (win, doc) {
 				property = trim(prop.property);
 				value = trim(prop.value);
 				
-				if (property) {
+				if (property && property !== "flex") {
 					shortProp = property.replace("box-", EMPTY_STRING);
 					shortProp = property.replace("-webkit-box-", EMPTY_STRING);
 

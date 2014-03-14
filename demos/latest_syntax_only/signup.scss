@@ -1,0 +1,80 @@
+
+/* Layout */
+body {
+    padding: 20px 0;
+}
+
+.outer {
+    max-width: 730px;
+    margin: 0 auto;
+}
+
+.jumbotron {
+    text-align: center;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.plans {
+    display: -webkit-flex;
+    display: flex;
+
+    > div {
+        width: 33%;
+        -webkit-flex: 1 1 0;
+        flex: 1 1 0;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        -webkit-align-items: flex-start;
+        align-items: flex-start;
+
+        .stretch {
+            width: 100%;
+            margin-bottom: 16px;
+            margin-bottom: 1rem;
+        }
+
+        a {
+            margin-top: auto;
+        }
+    }
+
+}
+
+.marketing {
+    margin-bottom: 6 * 16px;
+    margin-bottom: 6rem;
+}
+
+.well form .inputs{
+    display: -webkit-flex;
+    display: flex;
+    
+    #email {
+        -webkit-flex: 1 0 auto;
+        flex: 1 0 auto;
+    }
+    .btn {
+        width: 25 * 10px;
+        width: 25rem;
+        margin-left: 16px;
+        margin-left: 1rem;
+    }
+}
+
+.footer {
+    border-top: 1px solid #eee;
+    padding-top: 2 * 16px;
+    padding-top: 2rem;
+    display: -webkit-flex;
+    display: flex;
+    p {
+        -webkit-flex: 1 0 auto;
+        flex: 1 0 auto;
+    }
+    a {
+        padding-left: 16px;
+        padding-left: 1rem;
+    }
+}
